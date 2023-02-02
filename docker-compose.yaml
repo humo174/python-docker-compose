@@ -1,0 +1,7 @@
+version: '3'
+services:
+  python:
+    image: python:3.9-alpine3.17
+    command: "sh -c 'python /app/main.py'"
+    volumes:
+      - ./code:/app
